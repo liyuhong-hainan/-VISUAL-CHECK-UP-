@@ -13,13 +13,13 @@
 
 ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_1.png)  
 
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_2.gif)  ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_3.gif)  
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_2.gif)    ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_3.gif)  
 
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_4.gif)  ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_5.gif)  
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_4.gif)    ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_5.gif)  
 
 ### 演示二维码
 
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/)  
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/qrcode.png)  
 
 ## 功能介绍
 
