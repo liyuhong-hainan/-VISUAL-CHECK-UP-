@@ -11,7 +11,7 @@
 
 ## 功能演示
 
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/master/images/demo_1.gif)
+![] (https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/master/images/demo_1.gif)
 
 ## 功能介绍
 
