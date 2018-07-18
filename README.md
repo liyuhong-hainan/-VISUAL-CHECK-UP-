@@ -17,6 +17,10 @@
 
 ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_4.gif)  ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_5.gif)  
 
+### 演示二维码
+
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/)  
+
 ## 功能介绍
 
 ### 色觉测试
