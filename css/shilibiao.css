@@ -1,0 +1,60 @@
+
+ .clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+.clearfix {
+    zoom: 1;
+    /* for ie6 & ie7 */
+}
+ #page2{
+    display: none;
+    background: #fff;
+    height: 100%;
+    padding-top: 0px;
+ }
+
+#page2 header{
+  margin-top: -20px;
+  text-align: center;
+  background: #fff;
+  color: #444;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#page2 .table-box{
+margin-top: 20px;
+}
+.table-box ul li{
+  width: 100%;
+  position: relative;
+
+}
+.table-box ul li .left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+}
+.table-box ul li .left img{
+  margin-left: 10px;
+}
+
+
+
+.table-box ul li .right{
+
+}
+.table-box ul li .right .dst{
+  margin-left: 10px;
+  display: inline-block;
+
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<!--
+@author:李育洪
+date:2015/04/09
+-->
+<html>
+<head>
+<title>视觉精细</title>
+<meta http-equiv="content-Type"  content="text/html ; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0 , user-scalable=no"/>
+<meta name="apple-touch-fullscreen" content="YES"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jingxi.css">
+ <style>
+
+</style>
+
+</head>
+ <body>
+
+<div id="page1">
+<header>
+<a href="javascript:window.history.go(-1)"><img src="img/icon_go_back.png"/><span id="pageTitle"></span></a>
+</header>
+<div id="canvas"></div>
+
+<footer id="foot">
+<div class="btn-box">
+  <button id="nextBtn" style="display:none;">开始测试</button>
+  <button id="nextPage">开始测试</button>
+</div>
+  <img src="img/explain_dian_selected.png"/>
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+</footer>  
+
+</div>
+<div id="page2">
+<div class="hd">
+  <div id="timeOut">开始倒计时</div>
+</div>
+<div id="mainBox">
+</div>
+<div class="ft">
+  在规定的时间内找出<span id="mod">田</span>字
+</div>
+</div>
+
+<div id="page3">
+   <div class="result-box" id="resultBox">
+    <div class="result-img"><img id="resultImg" src="img/icon_result_ku.png"/></div>
+    <div class="result-text" id="resultText">您的测试结果欠佳！</div>
+</div>
+
+ <div class="btn-box">
+  <button id="finishBtn" onclick="javascript:history.back(-1)">完成测试</button>
+</div>
+</div>
+
+<div class="fade_box" id="fadeBox">
+  
+</div>
+     
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/jingxi.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,82 @@
+
+ #page2{
+    display: none;
+    background: rgb(255,0,254);
+    height: 100%;
+    padding-top: 10px;
+ }
+#page2 #standarBox{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #3697de;
+  -webkit-transform-origin:50% 50%;
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+
+}
+#page2 #moveBox{
+   position: absolute;
+  top: 40%;
+  left: 60%;
+  width: 100px;
+  height: 100px;
+
+}
+#page2 #moveBox .line-box{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#page2 #moveBox .line-box .line1{
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: red;
+}
+#page2 #moveBox .line-box .line2{
+  position: absolute;
+  width:100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background: red;
+}
+#page2  .btn-box{
+ position: fixed;
+ bottom: 60px;
+left: 50%;
+margin-left: -75px;
+}
+
+#page3{
+height: 100%;
+display: none;
+}
+#page3 .result-box{
+  background: #999;
+  height: 40%;
+  padding-top: 15%;
+}
+#page3 .result-box .result-img{
+  text-align: center;
+
+}
+#page3 .result-box .result-img img{
+  width: 70px;
+  height: 70px;
+}
+#page3 .result-box .result-text{
+
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+#page3  .btn-box{
+  height: 40%;
+  padding-top: 20%;
+}

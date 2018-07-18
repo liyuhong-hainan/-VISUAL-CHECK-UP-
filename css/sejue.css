@@ -1,0 +1,79 @@
+ #page2{
+    display: none;
+ }
+ #page2 .main-content{
+  margin-top: 30px;
+  width: 70%;
+  margin-left: 15%;
+
+ }
+  #page2 .main-content .img-box{
+    width: 100%;
+    height:auto;
+    text-align: center;
+   
+  }
+  #page2 .main-content .img-box img{
+ 
+      
+  }
+#page2 .main-content .text{
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+#page2 .main-content .btns{
+  margin-top: 10px;
+  width: 100%;
+  
+}
+#page2 .main-content .btns button{
+width: 80%;
+margin-left: 10%;
+padding: 5px;
+background:#3697de;
+border: none;
+color: #fff;
+font-size:1.1em;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+border-radius: 2px;
+-webkit-border-radius: 2px;
+margin-bottom: 10px;
+}
+#page3{
+height: 100%;
+display: none;
+}
+#page3 .result-box{
+  background: #999;
+  height: 40%;
+  padding-top: 15%;
+}
+#page3 .result-box .result-img{
+  text-align: center;
+
+}
+#page3 .result-box .result-img img{
+  width: 70px;
+  height: 70px;
+}
+#page3 .result-box .result-score{
+   color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+#page3 .result-box .result-text{
+
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+#page3  .btn-box{
+  height: 40%;
+  padding-top: 20%;
+}

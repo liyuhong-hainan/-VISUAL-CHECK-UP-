@@ -1,0 +1,133 @@
+
+ #page2{
+    display: none;
+    background: #f3f3f3;
+    height: 100%;
+    padding-top: 10px;
+ }
+
+ #moveArea{
+  width: 94%;
+  margin-left: 3%;
+  height: 65%;
+  border: 1px solid #999;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  position: relative;
+ }
+ #moveBox{
+  position: absolute;
+  width: 125px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+ }
+ #moveBox .blocks{
+  width: 125px;
+  height: 40px;
+  position: relative;
+
+ }
+ #moveBox .blocks .block{
+  position: absolute;
+  height: 40px;
+ }
+  #moveBox .blocks .block1{
+    width: 25px;
+    background: #ddd;
+    left: 0;
+    top: 0;
+  }
+   #moveBox .blocks .block2{
+    width: 25px;
+    position: absolute;
+    left: 25px;
+    top: 0;
+   }
+   #moveBox .blocks .block2 .center-space{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+  #moveBox .blocks .block2 #blueBlock{
+    position: absolute;
+    background: #3697de;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 100%;
+  }
+  #moveBox .blocks .block3{
+    width: 25px;
+    background: #ddd;
+    left: 100px;
+    top: 0;
+
+  }
+  .proBox{
+    width: 94%;
+    margin-left: 3%;
+    padding-top: 30px;
+
+  }
+  .proBox .proLine{
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    position: relative;
+  }
+   .proBox .proLine #blueLine{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 2px;
+    width: 5px;
+    background: #3697de;
+   }
+  .proBox .proLine #proMod{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: -12px;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    background: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow:2px 2px 2px #999;
+  }
+#page2 .text{
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  text-align: center;
+}
+#page3{
+height: 100%;
+display: none;
+}
+#page3 .result-box{
+  background: #999;
+  height: 40%;
+  padding-top: 15%;
+}
+#page3 .result-box .result-img{
+  text-align: center;
+
+}
+#page3 .result-box .result-img img{
+  width: 70px;
+  height: 70px;
+}
+#page3 .result-box .result-text{
+
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+#page3  .btn-box{
+  height: 40%;
+  padding-top: 20%;
+}

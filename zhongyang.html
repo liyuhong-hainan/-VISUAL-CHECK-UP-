@@ -1,0 +1,146 @@
+<!doctype html>
+<!--
+@author:李育洪
+date:2015/04/09
+-->
+<html>
+<head>
+<title>中央视力</title>
+<meta http-equiv="content-Type"  content="text/html ; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0 , user-scalable=no"/>
+<meta name="apple-touch-fullscreen" content="YES"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/zhongyang.css">
+ <style>
+
+</style>
+
+</head>
+ <body>
+
+<div id="page1">
+<header>
+<a href="javascript:window.history.go(-1)"><img src="img/icon_go_back.png"/><span id="pageTitle"></span></a>
+</header>
+<div id="canvas"></div>
+
+<footer id="foot">
+<div class="btn-box">
+  <button id="nextBtn">开始测试</button>
+</div>
+  <img src="img/explain_dian_selected.png"/>
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+</footer>  
+
+</div>
+
+
+<div id="page2">
+ <div class="head">
+<div class="img-box">
+  <img src="img/icon_close_lefteye.png">
+</div>
+</div>
+<div class="text">
+ <h4>闭上左眼</h4> 
+</div>
+<div class="foot">
+ <div class="btn-box">
+  <button id="recBtn">预备</button>
+</div>
+</div> 
+
+</div>
+
+<div id="page3" class="test-page pt-page page-cur">
+<div id="myCanvas"></div>
+</div>
+
+<div id="page4" class="pt-page ">
+  <header>你看到了什么？</header>
+  <div class="select-box clearfix">
+  <div class="sel" style="float:left;" id="falseSel1">
+  <p>线条弯曲或者成波浪状</p> 
+  </div>  
+   <div class="sel" style="float:right" id="falseSel2">
+    <p>小格子的形状和大小不一样</p>
+  </div> 
+  <div class="sel" style="float:left;margin-top:10px;" id="falseSel3" >
+  <p>线条有缺失，模糊或是褪色</p> 
+  </div>  
+   <div class="sel" style="float:right;margin-top:10px;" id="trueSel">
+    <p>前三条都不是</p>
+  </div>  
+
+  </div>
+</div>
+
+<div id="page5" class="test-page pt-page ">
+  <div class="img-box">
+    <img src="img/sanguang/test_sanguang2.png"/>
+  </div>
+</div>
+
+<div id="page6" class="pt-page">
+<div class="head">
+<header>
+<a href="javascript:window.history.go(-1)"><img src="img/icon_go_back.png"/><span>散光测试</span></a>
+</header>
+<div class="img-box">
+  <img src="img/icon_close_righteye.png">
+</div>
+</div>
+<div class="text">
+ <h4>闭上右眼</h4> 
+</div>
+<div class="foot">
+ <div class="btn-box" >
+  <button id="continueBtn">继续</button>
+</div>
+</div>
+
+</div>
+
+
+<div id="page7" class="test-page pt-page">
+  <div class="img-box">
+
+    <img src="img/sanguang/test_sanguang3.png"/>
+  </div>
+</div>
+
+<div id="page8" class="test-page pt-page">
+  <div class="img-box">
+    <img src="img/sanguang/test_sanguang2.png"/>
+  </div>
+</div>
+
+<div id="page9" class="pt-page">
+   <div class="result-box  clearfix" >
+   <div class="left" id="leftResultBox">
+      <div class="lab">左眼</div>
+      <div class="result-img"><img id="leftResultImg" src="img/icon_result_ku.png"/></div>
+      <div class="result-text" id="leftResultText">您的左眼测试欠佳！</div>
+   </div>
+   <div class="right" id="rightResultBox">
+      <div class="lab">右眼</div>
+      <div class="result-img"><img id="rightResultImg" src="img/icon_result_ku.png"/></div>
+      <div class="result-text" id="rightResultText">您的右眼眼测试欠佳！</div>
+   </div>
+   
+</div>
+
+ <div class="btn-box">
+  <button id="finishBtn" onclick="javascript:history.back(-1)">完成测试</button>
+</div>
+</div>
+     
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/zhongyang.js"></script>
+  </body>
+
+</html>

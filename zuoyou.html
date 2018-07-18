@@ -1,0 +1,69 @@
+<!doctype html>
+<!--
+@author:李育洪
+date:2015/04/09
+-->
+<html>
+<head>
+<title>左右移动</title>
+<meta http-equiv="content-Type"  content="text/html ; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0 , user-scalable=no"/>
+<meta name="apple-touch-fullscreen" content="YES"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/zuoyou.css">
+ <style>
+
+</style>
+
+</head>
+ <body>
+
+<div id="page1">
+<header>
+<a href="javascript:window.history.go(-1)"><img src="img/icon_go_back.png"/><span id="pageTitle"></span></a>
+</header>
+<div id="canvas"></div>
+
+<footer id="foot">
+<div class="btn-box">
+  <button id="nextBtn" style="display:none;">开始测试</button>
+  <button id="nextPage">开始测试</button>
+</div>
+  <img src="img/explain_dian_selected.png"/>
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+  <img src="img/explain_dian_unselected.png">
+</footer>  
+
+</div>
+<div id="page2">
+
+<div id="moveBox">
+  <img src="img/xunlian/duck.png"/>
+</div>
+<div id="timeOut"></div>
+</div>
+
+<div id="page3">
+   <div class="result-box" id="resultBox">
+    <div class="result-img"><img id="resultImg" src="img/icon_result_xiao.png"/></div>
+    <div class="result-text" id="resultText">干得漂亮</div>
+</div>
+
+ <div class="btn-box">
+  <button id="finishBtn" onclick="javascript:history.back(-1)">结束返回</button>
+</div>
+</div>
+
+<div class="fade_box" id="fadeBox">
+  
+</div>
+
+
+     
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/zuoyou.js"></script>
+  </body>
+
+</html>

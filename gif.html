@@ -1,0 +1,217 @@
+<!doctype html>
+<!--
+@author:李育洪
+date:2015/04/09
+-->
+<html>
+<head>
+<title>绚丽的视觉效果</title>
+<meta http-equiv="content-Type"  content="text/html ; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0 , user-scalable=no"/>
+<meta name="apple-touch-fullscreen" content="YES"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/gif.css">
+ <style>
+  body{
+        margin: 0;
+        padding: 0;
+        background: rgb(44,186,162);
+        overflow: hidden;
+      }
+       #canvas{
+
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+       }
+       ul,li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+       }
+       li{
+        position: absolute;
+        display: -webkit-box;
+        -webkit-box-pace:center;
+        -webkit-box-align:center;
+
+       }
+       #foot{
+        position:fixed;bottom:30px;left:0;width:100%;height:30px;text-align:center;color:#fff;z-index:1005;
+       }
+</style>
+
+</head>
+ <body>
+<div id="canvas">
+
+</div>
+<div id="foot">左右滑动显示上下页</div>
+  <script type="text/javascript">
+     var list=[{
+        src:"img/xunlian/test1.gif"
+     },
+     {
+
+        src:"img/xunlian/test2.gif" 
+     },
+      {
+        src:"img/xunlian/test3.gif" 
+     }];
+     function Slider (opts) {
+      this.wrap = opts.dom;
+      this.list = opts.list;
+
+      //构造三部曲
+      this.init();
+      this.renderDOM();
+      this.bindDOM();
+     }
+     Slider.prototype.init = function() {
+      //窗口的高宽比
+      this.radio = window.innerHeight / window.innerWidth;
+      this.scaleW = window.innerWidth;
+      //当前图片的索引
+      this.idx =  0;
+
+    };
+    Slider.prototype.renderDOM = function() {
+      var wrap = this.wrap;
+      var data  = this.list;
+      var len = data.length;
+      var scale = this.scaleW;
+      this.outer = document.createElement('ul');
+      for (var i = 0; i < len; i++) {
+         var li = document.createElement('li');
+         li.style.height = window.innerHeight+'px';
+         var item = data[i];
+         li.style.width = scale+'px';
+         li.style.webkitTransform = 'translate3d('+i*scale+'px,0,0)';
+         if(item){
+              li.innerHTML = '<img width="'+window.innerWidth+'" src="'
+              +item['src']+'"/>';
+             }
+         
+         this.outer.appendChild(li);
+      }
+          this.outer.style.width = scale+'px';
+          wrap.style.height = window.innerHeight + 'px';
+          wrap.appendChild(this.outer); 
+        
+    }
+    Slider.prototype.bindDOM = function() {
+      //绑定事件时this指针会漂移，所以先保存,javascript 是函数作用域
+      var self = this;
+      var scale = self.scaleW;
+      var outer = self.outer;
+      var len = self.list.length;
+
+      var startHandler = function(evt){
+        //开始点
+         self.startX = evt.touches[0].pageX;
+            //结束点
+           self.offsetX = 0;
+           self.startTime = new Date() * 1;//数字形式的时间戳
+          // alert("time:"+self.startTime+" startX:"+self.startX);
+             
+      };
+      var moveHandler = function(evt){
+            evt.preventDefault();//阻止浏览器的默认行为
+            self.offsetX =  evt.touches[0].pageX - self.startX;
+            //console.log(self.offsetX);
+            var lis =  outer.getElementsByTagName('li');
+            var i = self.idx - 1;
+            var m = i + 3;
+            for (i ; i < m; i++) {
+         lis[i]&&(lis[i].style.webkitTransform='translate3d('+((i-self.idx)*scale+self.offsetX)+'px,0,0)');
+         //防止页面切换的延迟
+         lis[i]&&(lis[i].style.webkitTransition = 'none');
+           };
+      };
+
+      var endHandler = function (evt) {
+
+        var boundary = scale/6;
+        var endTime = new Date() * 1;
+
+        var lis =outer.getElementsByTagName('li');
+
+        if(endTime - self.startTime > 800){//慢操作
+
+        if(self.offsetX>=boundary){
+             //进入上一张
+             self.go('-1');
+
+        }else if(self.offsetX< - boundary){
+        //进入下一页
+              self.go('+1');
+             
+        }else{
+             //留在本页
+             self.go('0');
+        }
+          }else{
+               //快操作
+               if(self.offsetX>50){
+                  self.go('-1');
+               }else if(self.offsetX < -50){
+                   self.go('+1');
+
+               }else{
+
+                self.go("0");
+               }
+
+          }
+        
+        
+      };
+
+      outer.addEventListener('touchstart',startHandler);
+      outer.addEventListener('touchmove',moveHandler);
+      outer.addEventListener('touchend',endHandler);
+
+    };
+     //Slider.go(2)//直接去那一页
+    Slider.prototype.go = function(n) {
+
+      var idx = this.idx;
+      var cidx;//下一个索引
+      var lis = this.outer.getElementsByTagName('li');
+      var len = lis.length;
+      var scale = this.scaleW;
+      if(typeof n =='number'){//判断字符串的类型，数字的话直接去那一页
+           cidx = idx;
+      }else if(typeof n =='string'){//只会去上下一页或者本页
+           cidx = idx + n*1;//转成数字再加上当前索引
+
+      }
+
+      //当索引从右边超出
+      if(cidx > len - 1){
+        cidx = len -1;
+      }else if(cidx < 0){
+            cidx = 0;
+      }
+
+      this.idx =cidx;
+      //0.2秒完成过渡，ease-out 动画的函数
+        lis[cidx].style.webkitTransform = '-webkitTransform 2s ease-out';
+
+      lis[cidx].style.webkitTransform = 'translate3d(0,0,0)';
+      lis[cidx-1]&&(lis[cidx-1].style.webkitTransform = 'translate3d(-'+ scale +'px,0,0)');
+      lis[cidx+1]&&(lis[cidx+1].style.webkitTransform = 'translate3d('+ scale +'px,0,0)');
+
+      
+    };
+     new Slider({
+      'dom':document.getElementById('canvas'),
+      'list':list
+     })
+
+   
+</script>
+</body>
+</html>

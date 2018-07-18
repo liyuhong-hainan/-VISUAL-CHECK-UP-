@@ -1,0 +1,95 @@
+html,body{
+   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{ 
+font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif;
+font-weight: 400;
+line-height: 1;
+font-size: 16px;
+color: #333;
+}
+ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.main{
+
+}
+.head{
+  height: 200px;
+background: rgb(139,218,47)
+}
+.head header{
+color: #fff;
+font-size: 1.1em;
+font-weight: 550;
+line-height: 45px;
+height: 45px;
+margin: 0;
+}
+.head header img{
+width: 20px;
+height: 20px;
+vertical-align: middle;
+margin-right: 5px;
+margin-left: 10px;
+}
+.head header span{
+vertical-align: middle;
+color: #fff;
+}
+.head  ul{
+  width: 94%;
+  margin-left: 3%;
+    color: #fff;
+    margin-top: 20px;
+}
+.head  ul h3{
+  line-height: 0.8;
+}
+.head  ul li{
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+.head  ul .cur{
+  background: rgb(96,175,58);
+}
+
+.bd{
+
+}
+.bd #title{
+  padding-left: 10px;
+}
+.bd .menu-list .item{
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 60px;
+
+}
+.bd .menu-list .item .content{
+  display: block;
+  color: #333;
+}
+.bd .menu-list .item .left-icon{
+  margin-right: 30px;
+    width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.bd .menu-list .item .right-icon{
+  float: right;
+    width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
