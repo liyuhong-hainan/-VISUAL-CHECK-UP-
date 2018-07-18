@@ -12,8 +12,10 @@
 ## 功能演示
 
 ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_1.png)  
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_2.gif)  
-![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_3.gif)  
+
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_2.gif)  ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_3.gif)  
+
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_4.gif)  ![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/blob/master/images/demo_5.gif)  
 
 ## 功能介绍
 
