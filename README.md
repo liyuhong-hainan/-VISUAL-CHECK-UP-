@@ -11,9 +11,7 @@
 
 ## 功能演示
 
-![](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif)
-
-![] (https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/master/images/demo_1.gif)
+![](https://github.com/liyuhong-hainan/-VISUAL-CHECK-UP-/master/images/demo_1.png)
 
 ## 功能介绍
 
