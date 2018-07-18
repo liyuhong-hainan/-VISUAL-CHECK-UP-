@@ -3,11 +3,11 @@
 对眼视功能进行简单测试的小工具，部分是原生js写的，部分页面用到了jquery
 
 ## 技术栈
-. js: 原生js
-. js touch: 手势事件
-. jquery: js插件操作写法更简单
-. js定时器: 计时
-. CSS3：CSS3动画及样式
+* js: 原生js
+* js touch: 手势事件
+* jquery: js插件操作写法更简单
+* js定时器: 计时
+* CSS3：CSS3动画及样式
 
 
 ## 功能介绍
